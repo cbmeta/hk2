@@ -9,7 +9,7 @@
       t.src=v;s=b.getElementsByTagName(e)[0];
       s.parentNode.insertBefore(t,s)}(window, document,'script',
       'https://connect.facebook.net/en_US/fbevents.js');
-      fbq('init', '2132583990665750');
+      fbq('init', '1453967673253387');
     </script>
   <!-- End Facebook Pixel Code -->
 
@@ -43,9 +43,9 @@
         if(!f._fbq) f._fbq = n;
         n.push = n; n.loaded = !0; n.version = '2.0'; n.queue = (f.xbq)?f.xbq.queue:[];
       })
-      (window, document, 'script', 'https://vg-tenant-2-gcp.vitaliy.cbinternal.com/sdk/4356901375134353322/events.js');
-      cbq('setHost', 'https://vg-tenant-2-gcp.vitaliy.cbinternal.com/');
-    cbq('init', '4356901375134353322');
+      (window, document, 'script', 'https://ca-89a6a2280593436c9a2a631ae4525d03.ecs.us-west-2.on.aws/sdk/4028070358387820379/events.js');
+      cbq('setHost', 'https://ca-89a6a2280593436c9a2a631ae4525d03.ecs.us-west-2.on.aws/');
+    cbq('init', '4028070358387820379');
       cbq('set', 'integrationMethod', 'forkFromSnippetCode@1.0');
       fbq('track', 'PageView');
     </script>
@@ -80,10 +80,9 @@ document.getElementById('checkoutButton').addEventListener('click', function() {
 }, false);
 
 document.getElementById('purchaseButton').addEventListener('click', function() {
-  fbq('track', 'Purchase', {
-    value: 100,
-    currency: 'USD',
-  });
+cbq('track', 'Purchase', {
+currency: 'USD',
+});
 }, false);
 
 document.getElementById('subcribeButton').addEventListener('click', function() {
