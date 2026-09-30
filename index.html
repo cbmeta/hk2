@@ -79,12 +79,10 @@ document.getElementById('checkoutButton').addEventListener('click', function() {
   fbq('track', 'InitiateCheckout');
 }, false);
 
-
 document.getElementById('purchaseButton').addEventListener('click', function() {
-  fbq('track', 'Purchase', {
-    value: 100,
-    currency: 'USD',
-  });
+cbq('track', 'Purchase', {
+currency: 'USD',
+});
 }, false);
 
 document.getElementById('subcribeButton').addEventListener('click', function() {
